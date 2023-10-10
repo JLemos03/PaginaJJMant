@@ -57,3 +57,92 @@
   #imagen-rebotante {
     transform: translateY(0);
   }
+.navbar{
+   position: relative;
+   z-index: 3;
+   
+}
+  .nav-link:hover{
+   color: aliceblue;
+
+  }
+  .dropdown-menu:hover{
+    color: aliceblue;
+  }
+
+  .dropdown-item:hover{
+   color: gray;
+  }
+
+body{
+background: #0575E6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+  /* background-image: url('img/logoJJBuenaCalidad\ sin\ fondo.png');*/
+ 
+  }
+
+  .navbar.bg-body-black {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: 1000; /* Ajusta el valor del índice z según sea necesario */
+ }
+ 
+ /* Estilo para la segunda barra de navegación superior */
+ .navbar.bg-body-info {
+   position: fixed;
+   top: 50px; /* Ajusta la altura de la primera barra de navegación */
+   left: 0;
+   width: 107%;
+   z-index: 1000; /* Ajusta el valor del índice z según sea necesario */
+ }
+ 
+ /* Estilo para el contenido principal */
+ .pag {
+   margin-top: 100px; /* Ajusta la altura total de ambas barras */
+ }
+
+ 
+
+ .card-title{
+   color: aliceblue;
+ }
+
+ .card-text {
+   font-size: 0.95rem; /* Tamaño de fuente normal para el texto */
+   max-height: 200px; /* Altura máxima del área de texto */
+   overflow: hidden; /* Oculta el contenido que se desborda */
+   color: aliceblue; /* Color del texto */
+}
+
+ .card-img-top{
+   position: relative;
+   overflow: hidden;
+   max-height: 100%;
+   align-items: center;
+   border-radius: 4px;
+   justify-content: center;
+   transition: max-height 0.3s ease;
+ }
+
+ .card-body{
+   display: none;
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: rgba(0, 0, 0, 0.692);
+   text-align: center;
+   border-radius: 4px;
+ }
+
+ .card:hover .card-body {
+   display: block;
+ }
